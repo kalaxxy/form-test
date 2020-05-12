@@ -182,7 +182,7 @@
 }
 
 .form__checkbox-custom:after {
-  content: url('/img/check.png');
+  content: url('../img/check.png');
   position: absolute;
   top: 50%;
   left: 50%;
@@ -207,7 +207,7 @@
 .form__error-icon {
   width: 24px;
   height: 24px;
-  background: url('/img/attention.png') center center no-repeat;
+  background: url('../img/attention.png') center center no-repeat;
   margin-right: 20px;
   top: 50%;
   left: 50%;
