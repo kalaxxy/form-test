@@ -1,0 +1,71 @@
+.section {
+  padding: 15px 0 135px 0;
+  background: url('/img/frontal-black.png') bottom 100px right 565px / 245px no-repeat,
+  url('/img/dark.png') bottom 100px right no-repeat;
+
+  @include laptops {
+    background: url("/img/frontal-black.png") bottom 100px left 510px/19% no-repeat, 
+    url("/img/dark.png") bottom 100px left 510px/60% no-repeat;
+  }
+
+  @include tablets {
+    background: url("/img/frontal-black.png") bottom 100px left 460px / 40% no-repeat;
+  }
+
+  @include phones {
+    background: none;
+  }
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section__line {
+  width: 140px;
+  height: 16px;
+  background-color: #fff;
+  bottom: 124px;
+  left: 0;
+}
+
+.section__auth {
+  border: 1px solid $lightgrey;
+  border-radius: 4px;
+  padding: 8px 18px 8px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.section__auth-icon {
+  margin-right: 4px;
+}
+
+.section__col {
+  width: 440px;
+}
+
+.section__title {
+  font-size: 2.25rem;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.section__desc {
+  margin-bottom: 24px;
+}
+
+.section__list {
+  list-style-image: url(/img/check.png);
+  color: #7A8F99;
+  margin-left: 28px;
+  font-weight: 300;
+}
+
+.section__item {
+  padding: 0px 0 20px 12px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Section Form</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__line"></div>
+                    <a href="#" class="section__auth">
+                        <object type="image/svg+xml" data="/img/user.svg" class='section__auth-icon'></object>
+                        <span class="section__auth-link">Войти</span>
+                    </a>
+                </div>
+                <div class="section__col">
+                    <h1 class="section__title">
+                        Начните торговать прямо сейчас
+                    </h1>
+                    <div class="section__desc">
+                        <ul class="section__list">
+                            <li class="section__item">
+                                Нет спреда — торгуйте с прозрачными и точными котировками
+                            </li>
+                            <li class="section__item">
+                                Достаточно депозита в $10, чтобы начать торговать
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="" class="form">
+                        <label class="form__elem">
+                            <div class="form__error-tooltip"></div>
+                            <input type="email" name="email" class="form__input form__input--email" required>
+                            <span class="form__placeholder">Ваш e-mail</span>
+                        </label>
+                        <label class="form__elem">
+                            <div class="form__error-tooltip"></div>
+                            <input type="password" name="pass" class="form__input form__input--pass" pattern=".{4,}"
+                                required>
+                            <span class="form__placeholder">Придумайте пароль</span>
+                        </label>
+                        <div class="form__row">
+                            <span class="form__text form__text--margin--bottom">Валюта для ввода и вывода средств</span>
+                            <div class="form__row-radio">
+                                <label class="form__radio-elem">
+                                    <input type="radio" name="currency" value="rub" checked class="form__radio">
+                                    <span class="form__radio-custom form__radio-custom--rub">P</span>
+                                </label>
+                                <label class="form__radio-elem">
+                                    <input type="radio" name="currency" value="usd" class="form__radio">
+                                    <span class="form__radio-custom form__radio-custom--usd">S</span>
+                                </label>
+                                <label class="form__radio-elem">
+                                    <input type="radio" name="currency" value="eur" class="form__radio">
+                                    <span class="form__radio-custom form__radio-custom--eur">E</span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="form__agreement">
+                            <div class="form__error-tooltip"></div>
+                            <input type="checkbox" name="agreement" class="form__checkbox" required>
+                            <span class="form__checkbox-custom"></span>
+                            <span class="form__text">Я совершеннолетний, ознакомился и принимаю соглашение об оказании
+                                услуг.</span>
+                        </label>
+                        <div class="form__error">
+                            <span class="form__error-icon"></span>
+                            <span class="form__error-msg">Учётная запись с указанным e-mail уже существует</span>
+                        </div>
+                        <button type="submit" class="form__submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <script src="/scripts/placeholder.js"></script>
+        <script src="/scripts/validation.js"></script>
+
+</body>
+
+</html>

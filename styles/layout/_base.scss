@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+
+  @include tablets {
+      font-size: 15px;
+  }
+
+  @include phones {
+      font-size: 14px;
+  }
+}
+
+body {
+  font: 16px/1.5 'Open Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.main {
+  height: 100%;
+  background-color: $darkblue;
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
